@@ -29,8 +29,18 @@ align-items:center;
 padding:20px 0;
 }
 
-.logo{
-font-size:24px;
+.logo-container{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo-img{
+height:40px;
+}
+
+.logo-text{
+font-size:22px;
 font-weight:bold;
 color:#4da3ff;
 }
@@ -108,7 +118,10 @@ margin-top:40px;
 
 <header>
 
-<div class="logo">Digital Avalokan</div>
+<div class="logo-container">
+<img src="logo.png" class="logo-img">
+<span class="logo-text">Digital Avalokan</span>
+</div>
 
 <nav>
 <a href="#">Home</a>
@@ -125,7 +138,11 @@ margin-top:40px;
 
 <section class="hero">
 
-<h1>Building the Intelligence Layer of Real Estate</h1>
+<h1>Digital Avalokan AI</h1>
+
+<p>
+Building the intelligence layer of modern real estate.
+</p>
 
 <p>
 Digital Avalokan develops AI-powered systems that transform how real estate businesses capture, qualify and convert property inquiries.
