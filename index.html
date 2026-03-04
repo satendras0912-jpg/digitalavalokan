@@ -1,24 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Digital Avalokan</title>
-  <link rel="icon" type="image/png" href="favicon.png">
 
-</head>
-
-<meta name="description" content="Digital Avalokan builds AI systems that automate lead capture, qualification and conversion for real estate companies.">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/png" href="favicon.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<link rel="icon" href="/logo.png">
 
 <style>
 
@@ -26,175 +17,188 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-font-family:'Poppins',sans-serif;
-background:#061423;
+background:linear-gradient(135deg,#021526,#01243b);
 color:white;
 line-height:1.6;
 }
 
 /* NAVBAR */
 
+header{
+position:sticky;
+top:0;
+background:rgba(1,20,35,0.9);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
 .navbar{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 8%;
+padding:18px 8%;
 max-width:1200px;
 margin:auto;
 }
 
 .logo img{
 height:120px;
-  width:auto;
-  display:block;
 }
 
 .nav-links{
 display:flex;
 gap:35px;
-  align-items:center;
 }
 
 .nav-links a{
 text-decoration:none;
 color:white;
 font-weight:500;
+transition:0.3s;
 }
 
 .nav-links a:hover{
-color:#40d4ff;
+color:#28e0c7;
 }
-
 
 /* HERO */
 
 .hero{
 text-align:center;
-padding:110px 20px 120px;
 max-width:900px;
 margin:auto;
+padding:110px 20px 140px;
 }
 
 .hero h1{
-font-size:58px;
-color:#40d4ff;
-margin-bottom:20px;
+font-size:56px;
+line-height:1.2;
+margin-bottom:25px;
+}
+
+.highlight{
+background:linear-gradient(90deg,#22e6c5,#2fa4ff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
 }
 
 .hero p{
 font-size:18px;
-color:#cbdff5;
+color:#c7d2de;
 margin-bottom:40px;
 }
 
-.button{
-background:#40d4ff;
-border:none;
-padding:16px 40px;
+.cta{
+display:inline-block;
+padding:15px 36px;
+background:linear-gradient(90deg,#22e6c5,#2fa4ff);
 border-radius:8px;
-font-weight:600;
-cursor:pointer;
 text-decoration:none;
-color:black;
+color:white;
+font-weight:600;
+transition:0.3s;
 }
 
-/* SECTION */
+.cta:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 25px rgba(0,0,0,0.35);
+}
 
-.section{
-padding:110px 20px;
+/* HOW IT WORKS */
+
+.workflow{
+padding:120px 8%;
 max-width:1200px;
 margin:auto;
 text-align:center;
 }
 
-.section h2{
-font-size:40px;
+.workflow h2{
+font-size:36px;
 margin-bottom:60px;
 }
 
-/* CARDS */
+.steps{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+}
 
-.cards{
+.step{
+background:rgba(255,255,255,0.05);
+padding:35px;
+border-radius:12px;
+}
+
+.step h3{
+color:#22e6c5;
+margin-bottom:10px;
+}
+
+/* PROBLEM */
+
+.problem{
+padding:120px 8%;
+max-width:1200px;
+margin:auto;
+text-align:center;
+}
+
+.problem h2{
+font-size:36px;
+margin-bottom:60px;
+}
+
+.problem-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:30px;
 }
 
 .card{
-background:#0e2a45;
-padding:35px;
-border-radius:14px;
+background:rgba(255,255,255,0.05);
+padding:30px;
+border-radius:12px;
 }
 
 .card h3{
-color:#40d4ff;
-margin-bottom:15px;
-}
-
-.card p{
-color:#cbdff5;
-}
-
-/* PIPELINE */
-
-.pipeline{
-background:#05111f;
-padding:110px 20px;
-text-align:center;
-}
-
-.pipeline-steps{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:30px;
-margin-top:40px;
-}
-
-.pipeline-step{
-background:#0e2a45;
-padding:20px 30px;
-border-radius:10px;
+color:#22e6c5;
+margin-bottom:10px;
 }
 
 /* PRODUCT */
 
 .product{
-padding:110px 20px;
-background:#05111f;
+padding:120px 8%;
+max-width:900px;
+margin:auto;
 text-align:center;
+}
+
+.product h2{
+font-size:34px;
+margin-bottom:20px;
 }
 
 .product p{
-max-width:700px;
-margin:auto;
-color:#cbdff5;
+color:#c7d2de;
 margin-bottom:35px;
-}
-
-/* CTA */
-
-.cta{
-padding:120px 20px;
-text-align:center;
-}
-
-.cta h2{
-font-size:40px;
-margin-bottom:20px;
 }
 
 /* FOOTER */
 
 footer{
-background:#05111f;
-padding:70px 20px;
+background:#01111f;
+padding:60px 8%;
+margin-top:120px;
 }
 
-.footer-container{
+.footer-grid{
 max-width:1200px;
 margin:auto;
 display:grid;
@@ -202,37 +206,27 @@ grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:40px;
 }
 
-.footer-column h4{
-color:#40d4ff;
+.footer-col h3{
 margin-bottom:15px;
+color:#22e6c5;
 }
 
-.footer-column a{
+.footer-col a{
 display:block;
+color:#9fb2c3;
 text-decoration:none;
-color:#9fb3c8;
 margin-bottom:8px;
+}
+
+.footer-col a:hover{
+color:white;
 }
 
 .footer-bottom{
 text-align:center;
 margin-top:40px;
-color:#9fb3c8;
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:38px;
-}
-
-.pipeline-steps{
-flex-direction:column;
-align-items:center;
-}
-
+color:#9fb2c3;
+font-size:14px;
 }
 
 </style>
@@ -241,53 +235,72 @@ align-items:center;
 
 <body>
 
-<!-- NAVBAR -->
+<header>
 
 <div class="navbar">
 
 <div class="logo">
-<img src="/logo.png">
+<img src="logo.png">
 </div>
 
 <div class="nav-links">
 <a href="#">Home</a>
-<a href="#">Vision</a>
-<a href="#">Products</a>
-<a href="#">Contact</a>
+<a href="#vision">Vision</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
 </div>
 
 </div>
+
+</header>
 
 <!-- HERO -->
 
 <section class="hero">
 
-<h1>Digital Intelligence for Modern Real Estate Sales</h1>
+<h1>
+Digital Intelligence for <br>
+<span class="highlight">Modern Real Estate Sales</span>
+</h1>
 
 <p>
-Digital Avalokan builds AI systems that capture, qualify and convert property inquiries automatically.
+Digital Avalokan builds AI systems that capture, qualify and convert
+property inquiries automatically for modern real estate teams.
 </p>
 
-<a href="https://salessetu.in" class="button">
+<a href="https://salessetu.in" class="cta">
 Explore SalesSetu
 </a>
 
 </section>
 
-<!-- PIPELINE -->
+<!-- HOW IT WORKS -->
 
-<section class="pipeline">
+<section class="workflow">
 
-<h2>How Modern Real Estate Teams Convert Leads</h2>
+<h2>How Our AI Sales System Works</h2>
 
-<div class="pipeline-steps">
+<div class="steps">
 
-<div class="pipeline-step">Facebook Ads</div>
-<div class="pipeline-step">Google Ads</div>
-<div class="pipeline-step">Property Portals</div>
-<div class="pipeline-step">WhatsApp Leads</div>
-<div class="pipeline-step">SalesSetu AI Qualification</div>
-<div class="pipeline-step">Hot Leads → Sales Team</div>
+<div class="step">
+<h3>Lead Capture</h3>
+<p>Leads from Meta Ads, Google Ads, WhatsApp and forms are captured instantly.</p>
+</div>
+
+<div class="step">
+<h3>AI Qualification</h3>
+<p>AI voice agents automatically call and qualify property inquiries.</p>
+</div>
+
+<div class="step">
+<h3>Smart Follow-ups</h3>
+<p>WhatsApp automation nurtures warm leads until they are ready.</p>
+</div>
+
+<div class="step">
+<h3>Sales Conversion</h3>
+<p>Hot leads are transferred to human agents for closing deals.</p>
+</div>
 
 </div>
 
@@ -295,11 +308,11 @@ Explore SalesSetu
 
 <!-- PROBLEM -->
 
-<section class="section">
+<section class="problem">
 
 <h2>Real Estate Sales Systems Are Broken</h2>
 
-<div class="cards">
+<div class="problem-grid">
 
 <div class="card">
 <h3>Lead Loss</h3>
@@ -308,44 +321,17 @@ Explore SalesSetu
 
 <div class="card">
 <h3>Manual Work</h3>
-<p>Sales teams rely on spreadsheets and manual calls.</p>
+<p>Sales teams rely on spreadsheets and manual calling.</p>
 </div>
 
 <div class="card">
 <h3>Unqualified Leads</h3>
-<p>Agents waste time on prospects with low buying intent.</p>
+<p>Agents waste time on low-intent prospects.</p>
 </div>
 
 <div class="card">
 <h3>No Insights</h3>
-<p>Brokerage teams lack clear pipeline intelligence.</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- SOLUTION -->
-
-<section class="section">
-
-<h2>SalesSetu Fixes the Entire Pipeline</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>AI Lead Qualification</h3>
-<p>AI voice agents qualify property inquiries instantly.</p>
-</div>
-
-<div class="card">
-<h3>Automated Follow-ups</h3>
-<p>WhatsApp automation ensures no lead goes cold.</p>
-</div>
-
-<div class="card">
-<h3>Sales Intelligence</h3>
-<p>Real-time dashboards reveal pipeline insights.</p>
+<p>Brokerage teams lack pipeline intelligence.</p>
 </div>
 
 </div>
@@ -354,32 +340,17 @@ Explore SalesSetu
 
 <!-- PRODUCT -->
 
-<section class="product">
+<section class="product" id="products">
 
 <h2>Our First Product — SalesSetu</h2>
 
 <p>
-SalesSetu is an AI-powered lead qualification and follow-up automation system designed for modern real estate teams.
+SalesSetu is an AI-powered lead qualification and follow-up automation
+system built for modern real estate sales teams.
 </p>
 
-<a href="https://salessetu.in" class="button">
+<a href="https://salessetu.in" class="cta">
 Visit SalesSetu
-</a>
-
-</section>
-
-<!-- CTA -->
-
-<section class="cta">
-
-<h2>Stop Losing Property Leads</h2>
-
-<p>Automate lead qualification and follow-ups with SalesSetu.</p>
-
-<br>
-
-<a href="https://salessetu.in" class="button">
-Explore SalesSetu
 </a>
 
 </section>
@@ -388,40 +359,39 @@ Explore SalesSetu
 
 <footer>
 
-<div class="footer-container">
+<div class="footer-grid">
 
-<div class="footer-column">
-<h4>Digital Avalokan</h4>
-<p>AI infrastructure for real estate growth.</p>
+<div class="footer-col">
+<h3>Digital Avalokan</h3>
+<p>Building the intelligence layer for modern real estate businesses.</p>
 </div>
 
-<div class="footer-column">
-<h4>Products</h4>
+<div class="footer-col">
+<h3>Products</h3>
 <a href="https://salessetu.in">SalesSetu</a>
 </div>
 
-<div class="footer-column">
-<h4>Company</h4>
+<div class="footer-col">
+<h3>Company</h3>
 <a href="#">Vision</a>
 <a href="#">Contact</a>
 </div>
 
-<div class="footer-column">
-<h4>Resources</h4>
-<a href="#">Blog</a>
-<a href="#">Documentation</a>
+<div class="footer-col">
+<h3>Connect</h3>
+<a href="#">LinkedIn</a>
+<a href="#">Email</a>
 </div>
 
 </div>
 
 <div class="footer-bottom">
 
-<p>© 2026 Digital Avalokan. All rights reserved.</p>
+© 2026 Digital Avalokan
 
 </div>
 
 </footer>
 
 </body>
-
 </html>
