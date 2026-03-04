@@ -8,7 +8,7 @@
 
 <title>Digital Avalokan</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -19,18 +19,21 @@ box-sizing:border-box;
 }
 
 body{
-font-family:'Poppins', sans-serif;
-background:#0a0f1c;
+font-family:'Poppins',sans-serif;
+background:#0b1323;
 color:white;
+line-height:1.6;
 }
 
-/* Navbar */
+/* NAVBAR */
 
 .navbar{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 8%;
+padding:22px 8%;
+max-width:1200px;
+margin:auto;
 }
 
 .logo{
@@ -40,67 +43,79 @@ gap:10px;
 }
 
 .logo img{
-height:38px;
+height:40px;
+width:auto;
 }
 
 .logo span{
 font-size:20px;
 font-weight:600;
-color:#3ec9ff;
+color:#42d3ff;
 }
 
 .nav-links a{
-margin-left:30px;
+margin-left:28px;
 text-decoration:none;
 color:white;
 font-size:15px;
+opacity:.9;
 }
 
-/* Hero */
+.nav-links a:hover{
+color:#42d3ff;
+}
+
+/* HERO */
 
 .hero{
-height:90vh;
+min-height:90vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:20px;
-background:linear-gradient(180deg,#0a0f1c,#0c1b33);
+padding:80px 20px;
+background:linear-gradient(180deg,#0b1323,#0d1e3a);
 }
 
 .hero-logo{
-width:120px;
-margin-bottom:20px;
+width:110px;
+margin-bottom:25px;
 }
 
 .hero h1{
-font-size:54px;
-color:#42c8ff;
-margin-bottom:15px;
+font-size:56px;
+color:#42d3ff;
+margin-bottom:18px;
 }
 
 .hero p{
 font-size:18px;
-max-width:700px;
-line-height:1.7;
+max-width:720px;
 opacity:.85;
+margin-bottom:35px;
 }
 
 .btn{
-margin-top:30px;
-padding:14px 34px;
+padding:14px 36px;
+background:#29c5ff;
 border-radius:6px;
-background:#29b6ff;
-color:white;
 text-decoration:none;
+color:white;
 font-weight:500;
+transition:.3s;
 }
 
-/* Section */
+.btn:hover{
+background:#18a7e0;
+}
+
+/* SECTION */
 
 .section{
-padding:80px 10%;
+padding:110px 10%;
+max-width:1200px;
+margin:auto;
 text-align:center;
 }
 
@@ -115,7 +130,7 @@ margin:auto;
 opacity:.8;
 }
 
-/* Cards */
+/* CARDS */
 
 .cards{
 display:grid;
@@ -125,75 +140,92 @@ margin-top:50px;
 }
 
 .card{
-background:#111827;
-padding:30px;
-border-radius:12px;
+background:#111a2e;
+padding:35px;
+border-radius:14px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+background:#15223d;
 }
 
 .card h3{
 margin-bottom:10px;
-color:#4dd6ff;
+color:#42d3ff;
 }
 
-/* Footer */
+/* PRODUCT SECTION */
+
+.product{
+padding:110px 10%;
+text-align:center;
+background:#0f1a30;
+}
+
+.product h2{
+font-size:36px;
+margin-bottom:20px;
+}
+
+.product p{
+max-width:720px;
+margin:auto;
+opacity:.85;
+margin-bottom:35px;
+}
+
+/* FOOTER */
 
 .footer{
 padding:40px;
 text-align:center;
-background:#111827;
+background:#0b1323;
+opacity:.7;
+font-size:14px;
 }
 
 </style>
 
 </head>
 
-
 <body>
-
-
-<!-- NAVBAR -->
 
 <div class="navbar">
 
 <div class="logo">
-
 <img src="logo.png">
-
 <span>Digital Avalokan</span>
-
 </div>
 
 <div class="nav-links">
-
 <a href="#">Home</a>
 <a href="#">Vision</a>
 <a href="#">Products</a>
 <a href="#">About</a>
 <a href="#">Contact</a>
-
 </div>
 
 </div>
 
-
-<!-- HERO -->
 
 <section class="hero">
+
+<img src="logo.png" class="hero-logo">
 
 <h1>Digital Avalokan AI</h1>
 
 <p>
 Building the intelligence layer of modern real estate.
-Digital Avalokan develops AI-powered systems that transform how real estate businesses capture,
-qualify and convert property inquiries.
+Digital Avalokan develops AI-powered systems that transform how
+real estate businesses capture, qualify and convert property inquiries.
 </p>
 
 <a href="https://salessetu.in" class="btn">Explore SalesSetu</a>
 
 </section>
 
-
-<!-- PROBLEM -->
 
 <section class="section">
 
@@ -226,15 +258,13 @@ qualify and convert property inquiries.
 </section>
 
 
-<!-- PRODUCT -->
-
-<section class="section">
+<section class="product">
 
 <h2>Our First Product — SalesSetu</h2>
 
 <p>
-SalesSetu is an AI-powered lead qualification and follow-up automation system designed
-for modern real estate teams.
+SalesSetu is an AI-powered lead qualification and follow-up automation system
+designed for modern real estate teams.
 </p>
 
 <a href="https://salessetu.in" class="btn">Visit SalesSetu</a>
@@ -242,14 +272,9 @@ for modern real estate teams.
 </section>
 
 
-<!-- FOOTER -->
-
 <div class="footer">
-
 <p>© 2026 Digital Avalokan</p>
-
 </div>
-
 
 </body>
 </html>
