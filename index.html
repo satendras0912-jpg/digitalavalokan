@@ -8,7 +8,14 @@
 
 <title>Digital Avalokan</title>
 
+<meta name="description" content="AI infrastructure for real estate lead automation and conversion.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="icon" href="/logo.png">
 
 <style>
 
@@ -20,11 +27,10 @@ box-sizing:border-box;
 
 body{
 font-family:'Poppins',sans-serif;
-background:#0b1323;
+background:#061423;
 color:white;
-line-height:1.6;
+overflow-x:hidden;
 }
-
 
 /* NAVBAR */
 
@@ -32,195 +38,271 @@ line-height:1.6;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:25px 8%;
+padding:22px 8%;
 max-width:1200px;
 margin:auto;
 }
 
-.logo{
-display:flex;
-align-items:center;
-gap:12px;
-}
-
 .logo img{
 height:60px;
-  width:auto;
-  display:block;
 }
 
-.logo span{
-font-size:22px;
-font-weight:600;
-color:#40d4ff;
+.nav-links{
+display:flex;
+gap:35px;
 }
 
 .nav-links a{
-margin-left:25px;
 text-decoration:none;
 color:white;
-font-size:15px;
-opacity:0.9;
+font-weight:500;
+transition:.3s;
 }
 
 .nav-links a:hover{
-color:#40d4ff;
+color:#3ed6ff;
 }
-
 
 /* HERO */
 
 .hero{
-min-height:80vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
 text-align:center;
-padding:60px 20px;
-background:linear-gradient(180deg,#0b1323,#0e1f3a);
+padding:150px 20px;
+max-width:900px;
+margin:auto;
+position:relative;
 }
 
 .hero h1{
-font-size:56px;
+font-size:64px;
 color:#40d4ff;
 margin-bottom:20px;
 }
 
 .hero p{
-max-width:700px;
 font-size:18px;
-opacity:0.85;
-margin-bottom:35px;
+color:#cbdff5;
+line-height:1.7;
+margin-bottom:40px;
 }
 
-.btn{
-padding:14px 36px;
-background:#2ecbff;
-border-radius:6px;
-text-decoration:none;
-color:white;
-font-weight:500;
-transition:0.3s;
+.hero button{
+background:#40d4ff;
+border:none;
+padding:18px 44px;
+border-radius:8px;
+font-weight:600;
+cursor:pointer;
 }
 
-.btn:hover{
-background:#19aee4;
+.hero button:hover{
+background:#2bbbe5;
 }
 
+/* GRADIENT BACKGROUND */
+
+.hero::before{
+content:"";
+position:absolute;
+top:-200px;
+left:-200px;
+width:600px;
+height:600px;
+background:radial-gradient(circle,#40d4ff33,transparent);
+filter:blur(120px);
+z-index:-1;
+}
 
 /* SECTION */
 
 .section{
 padding:110px 20px;
-max-width:1100px;
+max-width:1200px;
 margin:auto;
 text-align:center;
 }
 
 .section h2{
-font-size:36px;
-margin-bottom:20px;
+font-size:40px;
+margin-bottom:60px;
 }
-
-.section p{
-max-width:700px;
-margin:auto;
-opacity:0.8;
-}
-
 
 /* CARDS */
 
 .cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:30px;
-margin-top:50px;
 }
 
 .card{
-background:#111a2e;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
 padding:35px;
 border-radius:14px;
-transition:0.3s;
+transition:.3s;
 }
 
 .card:hover{
-transform:translateY(-6px);
-background:#15223d;
+transform:translateY(-10px);
+background:rgba(255,255,255,0.08);
 }
 
 .card h3{
-margin-bottom:10px;
 color:#40d4ff;
+margin-bottom:15px;
 }
 
+.card p{
+color:#cbdff5;
+}
+
+/* PIPELINE */
+
+.pipeline{
+background:#05111f;
+padding:110px 20px;
+text-align:center;
+}
+
+.pipeline-steps{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:35px;
+margin-top:40px;
+}
+
+.pipeline-step{
+background:#0e2a45;
+padding:20px 30px;
+border-radius:10px;
+}
+
+/* DASHBOARD PREVIEW */
+
+.dashboard{
+padding:120px 20px;
+text-align:center;
+}
+
+.dashboard img{
+max-width:900px;
+width:100%;
+border-radius:14px;
+margin-top:40px;
+box-shadow:0 20px 60px rgba(0,0,0,0.5);
+}
 
 /* PRODUCT */
 
 .product{
+background:#05111f;
 padding:110px 20px;
-background:#0f1a30;
 text-align:center;
 }
 
 .product h2{
-font-size:36px;
+font-size:40px;
 margin-bottom:20px;
 }
 
 .product p{
 max-width:700px;
 margin:auto;
-opacity:0.85;
-margin-bottom:35px;
+color:#cbdff5;
+margin-bottom:30px;
 }
 
+/* CTA */
+
+.cta{
+padding:120px 20px;
+text-align:center;
+}
+
+.cta h2{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.cta button{
+background:#40d4ff;
+border:none;
+padding:18px 46px;
+border-radius:8px;
+font-weight:600;
+cursor:pointer;
+}
 
 /* FOOTER */
 
-.footer{
-padding:40px;
+footer{
+background:#05111f;
+padding:70px 20px;
+}
+
+.footer-container{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:40px;
+}
+
+.footer-column h4{
+color:#40d4ff;
+margin-bottom:15px;
+}
+
+.footer-column a{
+display:block;
+text-decoration:none;
+color:#9fb3c8;
+margin-bottom:8px;
+}
+
+.footer-bottom{
 text-align:center;
-background:#0b1323;
-opacity:0.7;
-font-size:14px;
+margin-top:40px;
+color:#9fb3c8;
+}
+
+/* SCROLL ANIMATION */
+
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
 }
 
 </style>
 
 </head>
 
-
 <body>
-
 
 <!-- NAVBAR -->
 
 <div class="navbar">
 
 <div class="logo">
-
-<img src="/logo.png" alt="Digital Avalokan Logo">
-
-<span>Digital Avalokan</span>
-
+<img src="/logo.png">
 </div>
 
 <div class="nav-links">
-
 <a href="#">Home</a>
 <a href="#">Vision</a>
 <a href="#">Products</a>
-<a href="#">About</a>
 <a href="#">Contact</a>
-
 </div>
 
 </div>
-
-
 
 <!-- HERO -->
 
@@ -230,19 +312,36 @@ font-size:14px;
 
 <p>
 Building the intelligence layer of modern real estate.
-Digital Avalokan develops AI-powered systems that transform how
-real estate businesses capture, qualify and convert property inquiries.
+AI systems that capture, qualify and convert property inquiries automatically.
 </p>
 
-<a href="https://salessetu.in" class="btn">Explore SalesSetu</a>
+<a href="https://salessetu.in">
+<button>Explore SalesSetu</button>
+</a>
 
 </section>
 
+<!-- PIPELINE -->
 
+<section class="pipeline reveal">
 
-<!-- PROBLEM SECTION -->
+<h2>Real Estate Lead Intelligence Pipeline</h2>
 
-<section class="section">
+<div class="pipeline-steps">
+
+<div class="pipeline-step">Facebook Ads</div>
+<div class="pipeline-step">Google Ads</div>
+<div class="pipeline-step">Property Portals</div>
+<div class="pipeline-step">SalesSetu AI Qualification</div>
+<div class="pipeline-step">Hot Leads → Sales Team</div>
+
+</div>
+
+</section>
+
+<!-- PROBLEM -->
+
+<section class="section reveal">
 
 <h2>Real Estate Sales Systems Are Broken</h2>
 
@@ -272,33 +371,118 @@ real estate businesses capture, qualify and convert property inquiries.
 
 </section>
 
+<!-- DASHBOARD -->
 
+<section class="dashboard reveal">
 
-<!-- PRODUCT SECTION -->
+<h2>SalesSetu Dashboard</h2>
 
-<section class="product">
+<p>AI-powered lead qualification and automation platform for real estate teams.</p>
+
+<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71">
+
+</section>
+
+<!-- PRODUCT -->
+
+<section class="product reveal">
 
 <h2>Our First Product — SalesSetu</h2>
 
 <p>
-SalesSetu is an AI-powered lead qualification and follow-up automation system
-designed for modern real estate teams.
+SalesSetu automates lead qualification, follow-ups and pipeline insights
+for modern real estate teams.
 </p>
 
-<a href="https://salessetu.in" class="btn">Visit SalesSetu</a>
+<a href="https://salessetu.in">
+<button>Visit SalesSetu</button>
+</a>
 
 </section>
 
+<!-- CTA -->
 
+<section class="cta reveal">
+
+<h2>Ready to Transform Real Estate Lead Conversion?</h2>
+
+<a href="https://salessetu.in">
+<button>Explore SalesSetu</button>
+</a>
+
+</section>
 
 <!-- FOOTER -->
 
-<div class="footer">
+<footer>
 
-<p>© 2026 Digital Avalokan</p>
+<div class="footer-container">
+
+<div class="footer-column">
+
+<h4>Digital Avalokan</h4>
+<p>AI infrastructure for real estate growth.</p>
 
 </div>
 
+<div class="footer-column">
+
+<h4>Products</h4>
+<a href="https://salessetu.in">SalesSetu</a>
+
+</div>
+
+<div class="footer-column">
+
+<h4>Company</h4>
+<a href="#">Vision</a>
+<a href="#">Contact</a>
+
+</div>
+
+<div class="footer-column">
+
+<h4>Resources</h4>
+<a href="#">Blog</a>
+<a href="#">Documentation</a>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>© 2026 Digital Avalokan. All rights reserved.</p>
+
+</div>
+
+</footer>
+
+<script>
+
+function reveal(){
+
+var reveals=document.querySelectorAll(".reveal");
+
+for(var i=0;i<reveals.length;i++){
+
+var windowHeight=window.innerHeight;
+var elementTop=reveals[i].getBoundingClientRect().top;
+var elementVisible=150;
+
+if(elementTop<windowHeight-elementVisible){
+
+reveals[i].classList.add("active");
+
+}
+
+}
+
+}
+
+window.addEventListener("scroll",reveal);
+
+</script>
 
 </body>
 </html>
