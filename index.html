@@ -1,48 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Digital Avalokan</title>
+
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Avalokan</title>
 
 <style>
 
 body{
 margin:0;
-font-family:Arial;
+font-family:Arial, Helvetica, sans-serif;
 background:#0b0f19;
 color:white;
-text-align:center;
-}
-
-header{
-padding:120px 20px;
-}
-
-h1{
-font-size:52px;
-color:#4da3ff;
-}
-
-p{
-font-size:20px;
-max-width:700px;
-margin:auto;
 line-height:1.6;
 }
 
-button{
-margin-top:30px;
-padding:15px 35px;
-font-size:18px;
-background:#4da3ff;
-border:none;
-border-radius:8px;
-color:white;
-cursor:pointer;
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
 }
 
-section{
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 0;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#4da3ff;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+}
+
+.hero{
+text-align:center;
+padding:120px 20px;
+}
+
+.hero h1{
+font-size:52px;
+color:#4da3ff;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+max-width:700px;
+margin:auto;
+}
+
+.button{
+display:inline-block;
+margin-top:30px;
+padding:14px 32px;
+background:#4da3ff;
+border-radius:6px;
+color:white;
+text-decoration:none;
+}
+
+.section{
 padding:80px 20px;
+text-align:center;
+}
+
+.section h2{
+font-size:36px;
+margin-bottom:20px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:40px;
+}
+
+.card{
+background:#12182b;
+padding:30px;
+border-radius:10px;
+}
+
+.footer{
+text-align:center;
+padding:40px;
+background:#12182b;
+margin-top:40px;
 }
 
 </style>
@@ -51,40 +104,125 @@ padding:80px 20px;
 
 <body>
 
+<div class="container">
+
 <header>
 
-<h1>Digital Avalokan</h1>
+<div class="logo">Digital Avalokan</div>
 
-<p>
-Building the future of AI-powered real estate growth infrastructure.
-</p>
-
-<button>Explore SalesSetu</button>
+<nav>
+<a href="#">Home</a>
+<a href="#">Vision</a>
+<a href="#">Products</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
 
 </header>
 
-<section>
+</div>
 
-<h2>AI for Real Estate</h2>
+
+<section class="hero">
+
+<h1>Building the Intelligence Layer of Real Estate</h1>
 
 <p>
-Digital Avalokan is building intelligent systems that help real estate
-businesses capture, qualify and convert property inquiries using
-automation and AI.
+Digital Avalokan develops AI-powered systems that transform how real estate businesses capture, qualify and convert property inquiries.
+</p>
+
+<a class="button" href="https://salessetu.in">Explore SalesSetu</a>
+
+</section>
+
+
+<section class="section">
+
+<h2>Real Estate Sales Systems Are Broken</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Lead Loss</h3>
+<p>Property inquiries go cold within minutes without structured follow-ups.</p>
+</div>
+
+<div class="card">
+<h3>Manual Processes</h3>
+<p>Sales teams rely on calls and spreadsheets instead of intelligent systems.</p>
+</div>
+
+<div class="card">
+<h3>Unqualified Leads</h3>
+<p>Agents waste time on prospects with low buying intent.</p>
+</div>
+
+<div class="card">
+<h3>No Sales Intelligence</h3>
+<p>Most brokerage teams lack real data on their pipeline.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2>Our Vision</h2>
+
+<p>
+Digital Avalokan is building AI infrastructure for real estate businesses.  
+Our systems automate lead qualification, follow-ups and pipeline insights so sales teams focus only on closing deals.
 </p>
 
 </section>
 
-<section>
 
-<h2>SalesSetu</h2>
+<section class="section">
+
+<h2>Our First Product: SalesSetu</h2>
 
 <p>
-SalesSetu is our AI lead qualification engine designed specifically
-for real estate teams and brokerage firms.
+SalesSetu is an AI-powered lead qualification and automation platform designed specifically for real estate teams.
 </p>
 
+<a class="button" href="https://salessetu.in">Visit SalesSetu</a>
+
 </section>
+
+
+<section class="section">
+
+<h2>The Future Ecosystem</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>SalesSetu</h3>
+<p>AI lead qualification and follow-up automation.</p>
+</div>
+
+<div class="card">
+<h3>Ad Intelligence</h3>
+<p>Future system for optimizing real estate ad performance.</p>
+</div>
+
+<div class="card">
+<h3>Deal Analytics</h3>
+<p>Predictive insights into property conversion probability.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<div class="footer">
+
+<p>© 2026 Digital Avalokan</p>
+
+</div>
 
 </body>
 </html>
