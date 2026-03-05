@@ -1,1 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About | Digital Avalokan</title>
+
+<link rel="icon" type="image/png" href="favicon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#021526,#01243b);
+color:white;
+line-height:1.6;
+}
+
+/* NAVBAR */
+
+header{
+position:sticky;
+top:0;
+background:rgba(1,20,35,0.9);
+backdrop-filter:blur(10px);
+border-bottom:1px solid rgba(255,255,255,0.05);
+z-index:1000;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:14px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+.logo img{
+height:90px;
+}
+
+.nav-links{
+display:flex;
+gap:28px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+font-size:15px;
+}
+
+.nav-links a:hover{
+color:#22e6c5;
+}
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:120px 20px;
+max-width:900px;
+margin:auto;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.highlight{
+background:linear-gradient(90deg,#22e6c5,#2fa4ff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+color:#b7c7d6;
+font-size:18px;
+}
+
+/* SECTION */
+
+.section{
+padding:110px 20px;
+max-width:900px;
+margin:auto;
+text-align:center;
+}
+
+.section h2{
+font-size:34px;
+margin-bottom:20px;
+}
+
+.section p{
+color:#b7c7d6;
+font-size:17px;
+line-height:1.7;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+padding:30px;
+border-radius:12px;
+border:1px solid rgba(255,255,255,0.05);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+border:1px solid rgba(34,230,197,0.4);
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+.card h3{
+color:#22e6c5;
+margin-bottom:10px;
+}
+
+/* FOOTER */
+
+footer{
+background:#01111f;
+margin-top:120px;
+padding:60px 20px;
+text-align:center;
+color:#9fb2c3;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="navbar">
+
+<div class="logo">
+<img src="logo.png">
+</div>
+
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="vision.html">Vision</a>
+<a href="products.html">Products</a>
+<a href="about.html">About</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html">Contact</a>
+</div>
+
+</div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>About <span class="highlight">Digital Avalokan</span></h1>
+
+<p>
+Digital Avalokan is building the intelligence layer for modern real estate
+sales using AI-powered automation systems.
+</p>
+
+</section>
+
+<!-- STORY -->
+
+<section class="section">
+
+<h2>Our Story</h2>
+
+<p>
+Real estate businesses generate thousands of property inquiries every month,
+but a large portion of these leads never convert into real opportunities.
+The problem is not demand — it is inefficient sales systems.
+</p>
+
+<p>
+Most brokerage teams rely on manual follow-ups, spreadsheets and delayed
+responses, which results in lost leads and reduced conversions.
+Digital Avalokan was created to solve this problem by building intelligent
+automation systems that manage the entire lead lifecycle.
+</p>
+
+</section>
+
+<!-- WHAT WE BUILD -->
+
+<section class="section">
+
+<h2>What We Build</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>AI Lead Qualification</h3>
+
+<p>
+Automated systems that instantly qualify property inquiries using
+AI voice agents and smart data analysis.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Automated Follow-ups</h3>
+
+<p>
+WhatsApp automation ensures every lead receives timely follow-ups
+without manual intervention.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Sales Intelligence</h3>
+
+<p>
+Data-driven dashboards help brokerage teams understand pipeline
+performance and conversion trends.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FUTURE -->
+
+<section class="section">
+
+<h2>Our Vision for the Future</h2>
+
+<p>
+Digital Avalokan aims to become the intelligence infrastructure for
+modern real estate businesses.
+Our goal is to build a complete ecosystem of AI-driven tools that
+help sales teams capture, qualify and convert leads with minimal
+manual effort.
+</p>
+
+<p>
+The first step in this journey is our flagship product,
+<strong>SalesSetu</strong>, which focuses on AI-powered lead
+qualification and follow-up automation.
+</p>
+
+</section>
+
+<footer>
+
+© 2026 Digital Avalokan
+
+</footer>
+
+</body>
+</html>
