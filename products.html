@@ -1,1 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Products | Digital Avalokan</title>
+
+<link rel="icon" type="image/png" href="favicon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#021526,#01243b);
+color:white;
+line-height:1.6;
+}
+
+/* NAVBAR */
+
+header{
+position:sticky;
+top:0;
+background:rgba(1,20,35,0.9);
+backdrop-filter:blur(10px);
+border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:14px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+.logo img{
+height:90px;
+}
+
+.nav-links{
+display:flex;
+gap:28px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+font-size:15px;
+}
+
+.nav-links a:hover{
+color:#22e6c5;
+}
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:120px 20px;
+max-width:900px;
+margin:auto;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.highlight{
+background:linear-gradient(90deg,#22e6c5,#2fa4ff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+color:#b7c7d6;
+font-size:18px;
+}
+
+/* PRODUCT GRID */
+
+.products{
+max-width:1100px;
+margin:auto;
+padding:100px 20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:40px;
+}
+
+.product-card{
+background:rgba(255,255,255,0.05);
+padding:35px;
+border-radius:14px;
+border:1px solid rgba(255,255,255,0.05);
+transition:0.3s;
+}
+
+.product-card:hover{
+transform:translateY(-6px);
+border:1px solid rgba(34,230,197,0.4);
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+.product-card h3{
+color:#22e6c5;
+margin-bottom:10px;
+font-size:22px;
+}
+
+.product-card p{
+color:#b7c7d6;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 28px;
+background:linear-gradient(90deg,#22e6c5,#2fa4ff);
+border-radius:8px;
+text-decoration:none;
+color:white;
+font-weight:500;
+}
+
+.btn:hover{
+opacity:0.9;
+}
+
+/* FOOTER */
+
+footer{
+background:#01111f;
+padding:60px 20px;
+margin-top:120px;
+text-align:center;
+color:#9fb2c3;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="navbar">
+
+<div class="logo">
+<img src="logo.png">
+</div>
+
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="vision.html">Vision</a>
+<a href="products.html">Products</a>
+<a href="about.html">About</a>
+<a href="blog.html">Blog</a>
+<a href="#">Contact</a>
+</div>
+
+</div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Our <span class="highlight">Products</span></h1>
+
+<p>
+Digital Avalokan builds AI-powered systems designed to automate and
+optimize real estate sales pipelines.
+</p>
+
+</section>
+
+<!-- PRODUCTS -->
+
+<section class="products">
+
+<div class="product-card">
+
+<h3>SalesSetu</h3>
+
+<p>
+AI-powered lead qualification and follow-up automation system designed
+for modern real estate teams.
+</p>
+
+<a href="https://salessetu.in" class="btn">
+Visit SalesSetu
+</a>
+
+</div>
+
+<div class="product-card">
+
+<h3>AdsSetu</h3>
+
+<p>
+AI-driven advertising optimization platform for real estate marketing
+campaigns. (Coming Soon)
+</p>
+
+</div>
+
+<div class="product-card">
+
+<h3>Broker Intelligence</h3>
+
+<p>
+Future AI sales management system designed to provide complete pipeline
+intelligence for brokerage firms.
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Digital Avalokan
+
+</footer>
+
+</body>
+</html>
