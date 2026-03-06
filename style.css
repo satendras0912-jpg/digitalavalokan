@@ -95,16 +95,19 @@ margin-bottom:40px;
 
 .cta{
 display:inline-block;
-padding:15px 36px;
+padding:16px 36px;
 background:linear-gradient(90deg,#22e6c5,#2fa4ff);
-border-radius:8px;
+border-radius:10px;
 text-decoration:none;
-color:white;
+color:#021526;
 font-weight:600;
+font-size: 16px;
+transition:0.3s;
 }
 
 .cta:hover{
 transform:translateY(-3px);
+box-shadow:0 10px 20px rgba(0,0,0,0.3);
 }
 
 
