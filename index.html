@@ -41,34 +41,42 @@ z-index:1000;
 }
 
 .navbar{
+position:sticky;
+top:0;
+background:#021b2e;
+padding:15px 40px;
+z-index:1000;
+}
+
+.nav-container{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:12px 20px;
-max-width:1100px;
+max-width:1200px;
 margin:auto;
 }
 
-.logo img{
-height:90px;
-  width:auto;
+.logo{
+height:60px;
 }
 
-.nav-links{
+.nav-menu{
 display:flex;
-gap:28px;
-  front-size:15px;
+list-style:none;
+gap:30px;
 }
 
-.nav-links a{
-text-decoration:none;
+.nav-menu a{
 color:white;
+text-decoration:none;
 font-weight:500;
-transition:0.3s;
 }
 
-.nav-links a:hover{
-color:#28e0c7;
+.menu-toggle{
+display:none;
+font-size:28px;
+color:white;
+cursor:pointer;
 }
 
 /* HERO */
