@@ -357,6 +357,13 @@ flex-direction:column;
 width:100%;
 }
 
+.arrow{
+transform:rotate(90deg);
+display:block;
+margin:10px auto;
+}
+
+
 .problem-grid{
 grid-template-columns:1fr;
 }
