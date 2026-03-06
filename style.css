@@ -367,18 +367,3 @@ text-align:center;
 }
 
 }
-
-.arrow{
-font-size:26px;
-color:#22e6c5;
-}
-
-@media (max-width:768px){
-
-.arrow{
-transform:rotate(90deg);
-display:block;
-margin:10px auto;
-}
-
-}
