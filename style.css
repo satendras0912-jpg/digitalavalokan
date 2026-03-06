@@ -162,6 +162,10 @@ font-size:26px;
 color:#22e6c5;
 }
 
+.arrow{
+transform:rotate(-90deg);
+}
+
 
 /* WORKFLOW */
 
