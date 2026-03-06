@@ -36,7 +36,7 @@ margin:auto;
 }
 
 .logo img{
-height:90px;
+height:50px;
 }
 
 .nav-links{
@@ -51,6 +51,7 @@ color:white;
 font-size:15px;
 font-weight:500;
 opacity:0.9;
+transition:0.3s;
 }
 
 .nav-links a:hover{
@@ -62,7 +63,7 @@ color:#22e6c5;
 
 .menu-toggle{
 display:none;
-font-size:26px;
+font-size:28px;
 cursor:pointer;
 color:white;
 }
@@ -103,7 +104,7 @@ border-radius:10px;
 text-decoration:none;
 color:#021526;
 font-weight:600;
-font-size: 16px;
+font-size:16px;
 transition:0.3s;
 }
 
@@ -269,14 +270,8 @@ color:#9fb2c3;
 font-size:14px;
 }
 
-.section p{
-color:#b7c7d6;
-font-size:17px;
-max-width:720px;
-margin:auto;
-margin-top:10px;
-line-height:1.7;
-}
+
+/* SECTION */
 
 .section{
 padding:140px 20px;
@@ -291,15 +286,27 @@ margin-bottom:25px;
 font-weight:600;
 }
 
-section{
-max-width:1200px;
+.section p{
+color:#b7c7d6;
+font-size:17px;
+max-width:720px;
 margin:auto;
+margin-top:10px;
+line-height:1.7;
 }
 
 
-/* RESPONSIVE */
+/* ================= MOBILE RESPONSIVE ================= */
 
 @media (max-width:768px){
+
+.navbar{
+padding:14px 20px;
+}
+
+.logo img{
+height:38px;
+}
 
 .menu-toggle{
 display:block;
@@ -309,24 +316,46 @@ display:block;
 display:none;
 flex-direction:column;
 position:absolute;
-top:80px;
+top:70px;
 left:0;
 width:100%;
-background:#021b2e;
+background:#021526;
 text-align:center;
-padding:20px 0;
+padding:25px 0;
+gap:20px;
 }
 
 .nav-links.active{
 display:flex;
 }
 
+.hero{
+padding:80px 20px;
+}
+
 .hero h1{
-font-size:28px;
+font-size:30px;
+}
+
+.hero p{
+font-size:16px;
 }
 
 .pipeline-flow{
 flex-direction:column;
+}
+
+.pipe{
+width:100%;
+}
+
+.problem-grid{
+grid-template-columns:1fr;
+}
+
+.footer-grid{
+grid-template-columns:1fr;
+text-align:center;
 }
 
 }
