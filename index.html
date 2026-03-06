@@ -31,44 +31,42 @@ line-height:1.6;
 
 /* NAVBAR */
 
-.navbar{
+header{
 position:sticky;
 top:0;
-background:#021b2e;
-padding:15px 40px;
-z-index:1000;
+background:rgba(1,20,35,0.9);
+backdrop-filter:blur(10px);
+border-bottom:1px solid rgba(255,255,255,0.05);
 }
 
-.nav-container{
+.navbar{
 display:flex;
 justify-content:space-between;
 align-items:center;
-max-width:1200px;
+padding:14px 20px;
+max-width:1100px;
 margin:auto;
 }
 
-.logo{
-height:60px;
+.logo img{
+height:90px;
 }
 
-.nav-menu{
+.nav-links{
 display:flex;
-list-style:none;
-gap:30px;
+gap:28px;
 }
 
-.nav-menu a{
-color:white;
+.nav-links a{
 text-decoration:none;
-font-weight:500;
+color:white;
+font-size:15px;
 }
 
-.menu-toggle{
-display:none;
-font-size:28px;
-color:white;
-cursor:pointer;
+.nav-links a:hover{
+color:#22e6c5;
 }
+
 
 /* HERO */
 
