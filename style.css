@@ -2,10 +2,28 @@
 /* MOBILE RESPONSIVE DESIGN */
 /* ============================= */
 
-@media (max-width: 1024px){
+@media (max-width:768px){
 
-.navbar{
-padding:12px 20px;
+.nav-menu{
+display:none;
+flex-direction:column;
+position:absolute;
+top:80px;
+left:0;
+width:100%;
+background:#021b2e;
+text-align:center;
+padding:20px 0;
+}
+
+.nav-menu.active{
+display:flex;
+}
+
+.menu-toggle{
+display:block;
+}
+
 }
 
 .hero h1{
