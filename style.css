@@ -30,19 +30,26 @@ z-index:1000;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:16px 40px;
+padding:18px 40px;
 max-width:1200px;
 margin:auto;
 }
 
 .logo img{
-height:70px;
+height:80px;
+width:auto;
+}
+
+.logo{
+disply:flex;
+align-items:center;
 }
 
 .nav-links{
 display:flex;
-gap:32px;
+gap:34px;
 list-style:none;
+align-items:center;
 }
 
 .nav-links a{
@@ -50,6 +57,7 @@ text-decoration:none;
 color:white;
 font-size:15px;
 font-weight:500;
+letter-spacing:0.3px
 opacity:0.9;
 transition:0.3s;
 }
@@ -305,7 +313,7 @@ padding:14px 20px;
 }
 
 .logo img{
-height:50px;
+height:55px;
 }
 
 .menu-toggle{
@@ -316,7 +324,7 @@ display:block;
 display:none;
 flex-direction:column;
 position:absolute;
-top:70px;
+top:75px;
 left:0;
 width:100%;
 background:#021526;
