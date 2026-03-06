@@ -357,13 +357,6 @@ flex-direction:column;
 width:100%;
 }
 
-.arrow{
-transform:rotate(90deg);
-display:block;
-margin:10px auto;
-}
-
-
 .problem-grid{
 grid-template-columns:1fr;
 }
@@ -371,6 +364,16 @@ grid-template-columns:1fr;
 .footer-grid{
 grid-template-columns:1fr;
 text-align:center;
+}
+
+}
+
+@media (max-width:768px){
+
+.arrow{
+transform:rotate(90deg);
+display:block;
+margin:10px auto;
 }
 
 }
